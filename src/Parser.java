@@ -539,7 +539,6 @@ boolean esVariable(String s) {
 
 void dotest() throws Exception {
 	tablaDeSimbolos.insertar("Imprimir", new MaquinaDePila.Imprimir());
-	tablaDeSimbolos.insertar("Sumar", new MaquinaDePila.Sumar());
 	BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 	while (true) {
 		huboError = false;

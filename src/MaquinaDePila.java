@@ -399,7 +399,7 @@ public class MaquinaDePila {
 
     }
 
-    public static class Sumar implements Funcion{
+    public static class Mag implements Funcion{
 
         @Override
         public Object ejecutar(Object A) {
