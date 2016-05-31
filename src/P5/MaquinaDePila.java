@@ -1,3 +1,5 @@
+package P5;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -69,7 +71,7 @@ public class MaquinaDePila {
     }
     
     private void varPush_Eval(){
-        pila.push(tabla.encontrar((String)memoria.get(++contadorDePrograma)));
+        pila.push(tabla.encontrar((String)memoria.get(++contadorDePrograma)));        
     }
 
     private void asignar(){
@@ -123,7 +125,7 @@ public class MaquinaDePila {
         else 
             pila.push((double)com1 * (double)com2);
     }
-       
+    
     private void comparar() {
         Object A = pila.pop();
         Object B = pila.pop();
@@ -413,9 +415,7 @@ public class MaquinaDePila {
         double[][] A = {{1,2},{3,4}};
         double[][] B = {{5,6},{7,8}};
         TablaDeSimbolos tablaLocal = new TablaDeSimbolos();
-        Matriz matrizA = new Matriz(A);
-        Matriz matrizB = new Matriz(B);
-        Matriz matrizC = null;        
+        
         MaquinaDePila maquina = new MaquinaDePila(tablaLocal);
         
         maquina.agregarOperacion("constPush");

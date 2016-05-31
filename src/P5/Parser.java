@@ -12,8 +12,7 @@
 //### static char yysccsid[] = "@(#)yaccpar	1.8 (Berkeley) 01/20/90";
 
 
-
-
+package P5;
 
 
 //#line 2 "p5.y"
@@ -697,8 +696,8 @@ break;
 case 6:
 //#line 32 "p5.y"
 {yyval = val_peek(2);
-					maquina.agregar((Funcion)(new MaquinaDePila.Imprimir()));
-					yyval = new ParserVal(maquina.agregarOperacion("stop"));
+					yyval = new ParserVal(maquina.agregarOperacion("Imprimir"));
+					maquina.agregar(val_peek(1).obj);
 				}
 break;
 case 7:
