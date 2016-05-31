@@ -125,7 +125,7 @@ public class MaquinaDePila {
         else 
             pila.push((double)com1 * (double)com2);
     }
-       
+    
     private void comparar() {
         Object A = pila.pop();
         Object B = pila.pop();
