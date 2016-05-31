@@ -67,7 +67,7 @@ func miSuma ( ) { return ( $1 + $2 ) ; }
 Imprimir [ 1 + miSuma ( 5 , 3 + 1 ) ] ;
 
 //PROCEDIMIENTO fibonacci
-proc fib ( ) { a = 0 ; b = 1 ;  while ( b < $1 ) { Imprimir [ b ] ; c = b ; b = a + b ; a = c ;  } }
+proc fib ( ) { a = 0 ; b = 1 ;  while ( | b | < | $1 | ) { Imprimir [ b ] ; c = b ; b = a + b ; a = c ;  } }
 
 //FUNCIONES ANIDADAS
 func miFuncion ( ) { return 3 ; }
